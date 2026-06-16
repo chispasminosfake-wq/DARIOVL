@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Vamos al cine? 🎬🍿</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card" id="questionCard">
+        <div class="img-container">
+            <img src="chispas.jpeg" alt="chispas">
+        </div>
+        <h1 class="question-title">¿Vienes a ver una peli al cine?</h1>
+        <div class="buttons-container">
+            <button class="btn btn-yes" id="btnYes">Sí</button>
+            <button class="btn btn-no" id="btnNo">No</button>
+        </div>
+    </div>
+
+    <div class="card success-card hidden" id="successCard">
+        <div class="success-heart-container">😊</div>
+        <h1 class="success-title">¡Te espero entonces!</h1>
+        <p class="success-message">Una salida con el Prota de Rokys y yo xD <strong>Jueves 18/06/2026</strong> a las
+            <strong>5:00 PM</strong>. 🎬🍿
+        </p>
+        <button class="btn btn-next" id="btnNext1">Siguiente</button>
+    </div>
+    <div class="card food-card hidden" id="foodCard">
+        <div class="success-heart-container">🍿🥤</div>
+        <h1 class="success-title">¿Qué deseas comer?</h1>
+        <p class="subtitle-message">Elige tus antojos para la función: 🎬</p>
+        <div class="food-options">
+            <label class="food-option">
+                <input type="checkbox" name="food" value="Palomitas 🍿" class="food-checkbox">
+                <span class="food-box">
+                    <span class="emoji">🍿</span> Palomitas
+                </span>
+            </label>
+            <label class="food-option">
+                <input type="checkbox" name="food" value="Refresco 🥤" class="food-checkbox">
+                <span class="food-box">
+                    <span class="emoji">🥤</span> Refresco
+                </span>
+            </label>
+            <label class="food-option">
+                <input type="checkbox" name="food" value="Chocolates 🍫" class="food-checkbox">
+                <span class="food-box">
+                    <span class="emoji">🍫</span> Chocolates
+                </span>
+            </label>
+            <label class="food-option">
+                <input type="checkbox" name="food" value="Hot Dog 🌭" class="food-checkbox">
+                <span class="food-box">
+                    <span class="emoji">🌭</span> Hot Dog
+                </span>
+            </label>
+            <label class="food-option">
+                <input type="checkbox" name="food" value="Gomitas 🍬" class="food-checkbox">
+                <span class="food-box">
+                    <span class="emoji">🍬</span> Gomitas
+                </span>
+            </label>
+        </div>
+        <button class="btn btn-next" id="btnNext2">Siguiente</button>
+    </div>
+    <div class="card final-card hidden" id="finalCard">
+        <div class="success-heart-container">👑✨</div>
+        <h1 class="success-title">¡Invitada de Honor!</h1>
+        <p class="success-message">¡Oficialmente eres la invitada de honor del día! 🥰👑</p>
+        <div class="selected-summary" id="selectedSummary">
+        </div>
+        <p class="success-message">¡Nos vemos el Jueves 18/06/2026 a las 5:00 PM! 🎬🍿✨</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
